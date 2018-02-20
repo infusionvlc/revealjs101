@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/infusion.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="./assets/logo_base.png"></section>
+				</section>
+				<section>
+					<h3 style="text-align: right;">Rebélate contra PowerPoint de la mano de reveal.js</h3>
+					<p style="text-align: right;">O cómo aprender HTML, CSS y JS (y Markdown) en una hora mientras acabas un trabajo para clase</p>
+					<br/><br/>
+					<p style="text-align: right;">@alvarocasadoc</p>
+				</section>
+				<section>
+					<section>
+						<h3>¿Qué vamos a aprender?</h3>
+					</section>
+					<section>
+						<img src="./assets/html_css_js.png"></img>
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-transition="zoom">
+						<textarea data-template>
+							## Markdown
+
+							Qué nos permite hacer
+						</textarea>
+					</section>
+					<section data-markdown data-transition="zoom">
+						<textarea data-template>
+							- Dar formato al texto
+							- Insertar imágenes, enlaces, etc.
+						</textarea>
+					</section>
+					<section>
+						<pre><code data-trim data-noescape class="markdown">
+							# Esto es un título
+
+							Esto es un párrafo
+
+							Aquí pongo una lista:
+							- Primer elemento
+							- Segundo elemento
+
+							¡Y mucho más!
+						</code></pre>
+					</section>
+					<section data-markdown data-transition="zoom">
+						<textarea data-template>
+							# Esto es un título
+
+							Esto es un párrafo
+
+							Aquí pongo una lista:
+							- Primer elemento
+							- Segundo elemento
+
+							¡Y mucho más!
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>reveal.js</h1>
+						<p>Qué nos permite hacer</p>
+					</section>
+					<section data-markdown data-transition="zoom">
+						<textarea data-template>
+							- Diapositivas anidadas
+							- Notas del presentador
+							- Transiciones
+							- Animaciones con CSS y JS
+							- Integración de imágenes, vídeos, objetos 3D
+							- Todo lo que se te ocurra
+						</textarea>
+					</section>
+				</section>
+				<section data-transition="zoom">
+					<h1>Objetivo del taller</h1>
+					<p>Tenéis una hora para hacer vuestra propia presentación sobre 🔭 astronomía, 🦄 unicornios, 🍕 pizza, o lo que se os ocurra</p>
+				</section>
+				<section data-background-image="https://media.giphy.com/media/IEbrIbqMDfIdO/giphy.gif">
+					<h1>Let's get down to business</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
